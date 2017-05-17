@@ -36,7 +36,7 @@ public class MessageBroker implements Runnable {
                     receivedMsg = message;
                     System.out.println(" [x] Received '" + message + "'");
 
-                    Emitter.send(receivedMsg, "10.180.42.52");
+                    Emitter.send(receivedMsg, "10.180.40.77");
                 }
             };
             channel.basicConsume(QUEUE_NAME, true, consumer);

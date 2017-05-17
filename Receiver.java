@@ -1,14 +1,10 @@
 import com.rabbitmq.client.*;
 
-/**
- * Created by ivan on 26/04/17.
- */
-
 public class Receiver {
 
     private static final String EXCHANGE_NAME = "topic_logs";
 
-    public static void main(String[] topics) throws Exception {
+    public static void main(String[] topics) throws Exception{
 
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");
